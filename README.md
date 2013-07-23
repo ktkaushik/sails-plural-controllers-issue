@@ -1,0 +1,2 @@
+# latestSails
+### a Sails application
