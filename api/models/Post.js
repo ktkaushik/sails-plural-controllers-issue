@@ -9,10 +9,22 @@
 module.exports = {
 
   attributes: {
-  	
-  	// name: 'string'
-  	
+    
+    name: {
+      type: 'string',
+      minLength: 5
+    }
    
+  },
+
+  beforeCreate: function(values, next) {
+    console.log(" ********************************* you are in beforeCreate ********************************* ");
+    next();
+  },
+
+  afterCreate: function(values, next) {
+    console.log(" ********************************* you are in afterCreate ********************************** ");
+    next();
   }
 
 };

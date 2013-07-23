@@ -31,7 +31,7 @@ module.exports = {
     Post.create({
       name: 'Static Post',
     }).done(function(err, post) {
-
+      console.log(" ****************** in the callback of done in create action **************************");
       // Error handling
       if (err) {
         return res.send(err,500);
